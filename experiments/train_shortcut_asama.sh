@@ -1,0 +1,2 @@
+#!/bin/sh
+CUDA_VISIBLE_DEVICES=-1 python meta_train.py --scenario $1 --save-rate 1000 --num-episodes 500000 --save-dir ./policy/${1}${2}/ --exp-name $1$2 --start-global-counter 0 --end-global-counter 0 --learning-prey --without-curriculum
